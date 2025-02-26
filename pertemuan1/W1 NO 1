@@ -1,0 +1,15 @@
+#program  mengklasifikasikan suhu
+suhu = float(input("masukkan suhu (celcius): "))
+
+if (suhu < 0):
+    print("Membeku")
+elif (suhu < 10):
+    print ("Sangat dingin")
+elif (suhu < 20):
+    print ("Sejuk")
+elif (suhu < 30):
+    print ("Hangat")
+elif (suhu < 40):
+    print ("Panas")
+else :
+    print ("Sangat panas")
