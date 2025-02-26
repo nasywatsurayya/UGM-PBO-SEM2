@@ -1,0 +1,4 @@
+#program untuk menerima input angka kemudian ouput berupa hitung mundur
+angka = int(input("masukkan angka : "))
+for num in range(angka, -1, -1):
+    print(num, end=" ")
