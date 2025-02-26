@@ -1,0 +1,28 @@
+#program untuk menentukan nilai siswa
+while True:
+    niu = input("input NIU siswa (6 digit): ")
+    if len(niu) == 6 and niu.isdigit():
+        break
+    else:
+        print("NIU tidak valid! silahkan input ulang.")
+        
+tugas = int(input("input nilai tugas siswa: "))
+laporan = int(input("input nilai laporan siswa: "))
+
+rata_rata = (tugas+laporan)/2
+if (rata_rata < 40):
+    print("nilai siswa: K")
+else:
+    ujian = int(input("input nilai ujian siswa: "))
+    nilai_akhir = (tugas * 0.25) + (laporan * 0.25) + (ujian * 0.50)
+
+    if nilai_akhir >= 80:
+        print("nilai huruf siswa = 'A'")
+    elif nilai_akhir >= 70:
+        print("nilai huruf siswa = 'B'")
+    elif nilai_akhir >= 60:
+        print("nilai huruf siswa = 'C'")
+    elif nilai_akhir >= 50:
+        print("nilai huruf siswa = 'D'")
+    else:
+        print("nilai huruf siswa = 'E'")
